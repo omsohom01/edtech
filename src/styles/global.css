@@ -1,0 +1,185 @@
+/* Global Styles */
+
+/* Body Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f6f8; /* Light background */
+  color: #333; /* Dark text for readability */
+  line-height: 1.6;
+}
+
+/* Global Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header and Titles */
+h1, h2, h3, h4 {
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #1a73e8; /* Primary blue */
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+/* Buttons */
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover Effects */
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* Primary Button */
+button.primary {
+  background-color: #1a73e8; /* Blue */
+  color: white;
+}
+
+button.primary:hover {
+  background-color: #0d58b5;
+}
+
+/* Secondary Button */
+button.secondary {
+  background-color: #ff4081; /* Pink */
+  color: white;
+}
+
+button.secondary:hover {
+  background-color: #e0245e;
+}
+
+/* Success Button */
+button.success {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+button.success:hover {
+  background-color: #388e3c;
+}
+
+/* Paper Card Style */
+.paper-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography */
+h1, h2, h3, h4, p, span {
+  text-align: center;
+}
+
+/* Link Styles */
+a {
+  text-decoration: none;
+  color: #1a73e8;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Grid and Flexbox Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+/* Forms and Inputs */
+input, textarea {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+  border-color: #1a73e8;
+  outline: none;
+}
+
+/* Page Transitions */
+.page-transition {
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  .paper-card {
+    background-color: #333;
+    color: #fff;
+  }
+
+  button.primary {
+    background-color: #0d58b5;
+  }
+
+  button.secondary {
+    background-color: #e0245e;
+  }
+
+  button.success {
+    background-color: #388e3c;
+  }
+}
