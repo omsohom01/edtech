@@ -1,0 +1,32 @@
+# Node.js / React Project
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore build and dist directories
+build/
+dist/
+
+# Ignore environment variables file
+.env
+
+# Ignore log files
+*.log
+
+# Ignore OS-specific files
+.DS_Store        # macOS
+Thumbs.db        # Windows
+
+# Ignore IDE settings
+.vscode/
+.idea/
+
+# Ignore temporary files
+*.tmp
+
+# Ignore test reports
+coverage/
+
+# Ignore other unnecessary files
+*.bak
+*.swp
